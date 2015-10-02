@@ -1,0 +1,48 @@
+<html>
+<head> Lab6 Index</head>
+<title> Lab 6 </title>
+<script src="scripts/processing.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+
+void setup(){
+
+size( 1500, 1500 );
+
+frameRate( 30 );
+
+
+}
+
+
+void draw()
+{
+	background(255,255,2553);
+	fill(0,0,0);
+	text("This is Index",25,25);
+	
+	fill(0,0,0,0);
+	rect(50,50,250,100);
+	
+	fill(0,0,0);
+	text("Lab6a",150,100);
+	
+	if (mousePressed == true && mouseButton == LEFT)
+		{
+		if (mouseX > 50 && mouseX < 300 && mouseY > 50 && mouseY < 100)
+			{
+				link("Lab6a.html")
+			}
+			}
+}
+	
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
+
